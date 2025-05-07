@@ -1,0 +1,120 @@
+
+p
+{
+	color: white;
+	margin-top: 0;
+	margin-bottom: 0;
+	text-align: center;
+}
+
+header, footer
+{
+	color: white;
+	border:solid;
+
+	text-align: center;
+	margin-bottom: 15px;
+
+	padding-top: 8px;
+	padding-bottom: 8px;
+	padding-left: 8px;
+	padding-right: 8px;
+
+}
+
+body
+{
+	background-color: black;
+	background-image: linear-gradient(to top, black, #936969, black);
+}
+
+nav
+{
+	text-align: center;
+	padding-top: 30px;
+	padding-bottom: 30px;
+}
+
+div{
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+a:link, a:visited
+{
+	
+	text-decoration: none;
+	
+}
+
+.web-name
+{
+	font-size: 35px;
+}
+
+.page-container
+{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: space-between;
+}
+
+.page-link
+{
+	background-color: rgb(255, 0, 128);
+	color: white;
+	
+
+	padding-top: 5px;
+	padding-bottom: 5px;
+	padding-left: 15px;
+	padding-right: 15px;
+
+	margin-left: 5px;
+	margin-right: 5px;
+	transition: background-color 1s, color 1s;
+
+	cursor: pointer;
+
+}
+
+.text-format
+{
+	font-family: Arial;
+	font-size: 50px;
+	
+}
+
+.logo
+{
+	width: 250px;
+	object-fit: cover;
+	image-rendering: pixelated;
+}
+
+.small-container
+{
+	border: solid;
+	border-color: white;
+
+	flex: 1;
+}
+
+.small-empty-space
+{
+	flex: 1;
+}
+
+.large-container
+{
+	border:solid;
+	border-color: white;
+
+	flex: 2;
+}
+
+.large-empty-space
+{
+	flex: 2;
+}
