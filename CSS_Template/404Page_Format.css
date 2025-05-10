@@ -1,0 +1,11 @@
+#_404Page_Body
+{
+    display: flex;
+    flex-direction: column;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+
+    background-image:linear-gradient(to right, darkgray , white , darkgray );
+}
