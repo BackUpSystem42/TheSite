@@ -2,40 +2,43 @@
 <html>
 
 	<head>
-		<title>Home Page</title>
+		<title>Game Page</title>
 		<link rel = "stylesheet" href = "CSS_Template/General_Format.css">
 		<link rel = "stylesheet" href = "CSS_Template/Navigation_Button.css">
 	</head>
 
 
-	<body>
-<header>
+	<body id = "PageBody" onload = "UpdatePageColor(2)">
+		<header>
 			<div class = "web-name">
 				Arco&iacuteris Monocrom&aacutetico
 			</div>
 
-			<img class = "logo" src = "Pictures/Logo.png">
+			<img class = "back-logo" src = "Pictures/Logo_V3.png">
+			<img id = "logo" class = "logo" src = "Pictures/Logo_V3.png">
 		
 				
 			<div class = "page-container">
-				<a class = "page-link red-button" href = "https://arcoirismonocromatico.com/">
+				<a id = "red-button" onmouseover = "mouseOver(0)" onmouseout="mouseOut(0)" class = "page-link red-button" href = "https://arcoirismonocromatico.com/">
 					Home
 				</a>
 
-				<a class = "page-link orange-button"  href = "AboutPage.html">
+				<a id = "orange-button" onmouseover = "mouseOver(1)" onmouseout="mouseOut(1)" class = "page-link orange-button"  href = "AboutPage.html">
 					About
 				</a>
 
-				<a class = "page-link yellow-button" href = "GamePage.html">
+				<a id = "yellow-button" onmouseover = "mouseOver(2)" onmouseout="mouseOut(2)" class = "page-link yellow-button" href = "GamePage.html">
 					Game
 				</a>
 
-				<a class = "page-link green-button" href = "404.html"></a>
-				<a class = "page-link blue-button" href = "404.html"></a>
-				<a class = "page-link indigo-button" href = "404.html"></a>
-				<a class = "page-link violet-button" href = "404.html"></a>
+				<a id = "green-button" onmouseover = "mouseOver(3)" onmouseout="mouseOut(3)" class = "page-link green-button" href = "404.html"></a>
+
+				<a id = "blue-button" onmouseover = "mouseOver(4)" onmouseout="mouseOut(4)" class = "page-link blue-button" href = "404.html"></a>
+
+				<a id = "indigo-button" onmouseover = "mouseOver(5)" onmouseout="mouseOut(5)" class = "page-link indigo-button" href = "404.html"></a>
+
+				<a id = "violet-button" onmouseover = "mouseOver(6)" onmouseout="mouseOut(6)" class = "page-link violet-button" href = "404.html"></a>
 			</div>
-			
 			
 			
 			
@@ -55,6 +58,7 @@
 			</p>
 		</footer>
 
+		<script src = "JavaScript/ColorMixer.js"></script>
 	</body>
 
 	

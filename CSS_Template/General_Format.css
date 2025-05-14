@@ -25,7 +25,7 @@ header, footer
 body
 {
 	background-color: black;
-	background-image: linear-gradient(to top, black, #936969, black);
+	/* background-image: linear-gradient(to top, black, #936969, black); */
 }
 
 nav
@@ -74,7 +74,7 @@ a:link, a:visited
 
 	margin-left: 5px;
 	margin-right: 5px;
-	transition: background-color 1s, color 1s;
+	transition: background-color 1.5s, color 1s;
 
 	cursor: pointer;
 
@@ -87,11 +87,41 @@ a:link, a:visited
 	
 }
 
+.back-logo
+{
+	width: 250px;
+	object-fit: cover;
+	image-rendering: pixelated;
+	
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	
+	z-index: 1;
+	
+	
+	
+	
+}
 .logo
 {
 	width: 250px;
 	object-fit: cover;
 	image-rendering: pixelated;
+	opacity: 0;
+	transition: opacity 3s;
+
+	z-index: 2;
+	position: absolute;
+	top: 204;
+	left:50%;
+
+	transform: translate(-50%, -50%);
+
+
+	
+	
+	
 }
 
 .small-container
@@ -119,3 +149,13 @@ a:link, a:visited
 {
 	flex: 2;
 }
+
+footer
+{
+	
+	color:hsl(359, 84%, 49%);
+	color: hsl(359, 100%, 77%);
+	color: hsl(39, 100%, 50%);
+	
+}
+
