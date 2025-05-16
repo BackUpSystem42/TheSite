@@ -18,6 +18,14 @@ const button_name = ["red-button", "orange-button", "yellow-button", "green-butt
 
 let colorModeRainbow = [];
 
+let backImg = document.getElementById("back-logo");
+
+let frontImg = document.getElementById("front-logo");
+
+let imgFlip = true;
+
+let pageIndex;
+
 function pageMonochromeShift(base, added, opacity)
 {
     let original_a = added.a;
@@ -73,11 +81,15 @@ function RBG2Text(rgbFormat)
 function mouseOver(index)
 {
     document.getElementById(button_name[index]).style.backgroundColor = RBG2Text(rainbow[index]);
+    
+    GetLogo(index);
 }
 
 function mouseOut(index)
 {
     document.getElementById(button_name[index]).style.backgroundColor = RBG2Text(colorModeRainbow[index]);
+
+    GetLogo(pageIndex);
 }
 
 function UpdatePageColor(index)
@@ -93,17 +105,30 @@ function UpdatePageColor(index)
         document.getElementById(button_name[i]).style.backgroundColor = RBG2Text(newColor);
 
         colorModeRainbow.push(newColor);
-
     }
 
     console.log(colorModeRainbow);
 
     document.body.style.backgroundImage = "linear-gradient(to top, black,"+ RBG2Text(appledColor) + ", black)";
+
+    pageIndex = index
 }
 
 function GetLogo(index)
 {
-    let img = document.getElementById("logo");
+    let img;
+    let disableImg;
+    
+    if(imgFlip)
+    {
+        img = frontImg;
+        disableImg = backImg;
+    }
+    else
+    {
+        img = backImg;
+        disableImg = frontImg;
+    }
 
     switch(index)
     {
@@ -133,6 +158,9 @@ function GetLogo(index)
     }
 
     img.style.opacity = 1;
+    disableImg.style.opacity = 0;
+
+    imgFlip = !imgFlip;
 
 }
 

@@ -1,106 +1,56 @@
-.red-button
+#red-button
 {
-    background-color: #936969;
-
+    background-color: #e81416;
     flex:1;
     margin-top: 45px;
     margin-bottom: 0px;
 }
-.red-button:hover
-{
-    background-color: #e81416;
-    color: black;
-}
 
-.orange-button
+#orange-button
 {
-    background-color: #8a8376;
+    background-color: #ffa500;
     flex: 1;
-   
     margin-top: 30px;
     margin-bottom: 15px;
 }
 
-.orange-button:hover
+#yellow-button
 {
-    background-color: #ffa500;
-    color: black;
-}
-
-.yellow-button
-{
-    background-color: #aca984;
+    background-color: #faeb36;
     flex:1;
-    
     margin-top: 15px;
     margin-bottom: 30px;
 }
 
-.yellow-button:hover
+#green-button
 {
-   
-    background-color: #faeb36;
-    color: black;
-}
-
-.green-button
-{
-    background-color: #6e7d5a;
+    background-color: #79c314;
     flex:1;
-    
     margin-top: 0px;
     margin-bottom: 45px;
 }
 
-
-.green-button:hover
+#blue-button
 {
-    
-    background-color: #79c314;
-    color: black;
-}
-
-.blue-button
-{
-    background-color: #8892a7;
-    flex:1;
-    
+    background-color: #487de7;
+    flex:1;   
     margin-top: 15px;
     margin-bottom: 30px;
 }
 
-.blue-button:hover
+#indigo-button
 {
-    background-color: #487de7;
-    color: black;
-}
-
-.indigo-button
-{
-    background-color: #635f74;
+    background-color: #4b369d;
     flex:1;
-    
     margin-top: 30px;
     margin-bottom: 15px;
 }
 
-.indigo-button:hover
+#violet-button
 {
-    background-color: #4b369d;
-    color: black;
-}
-
-.violet-button
-{
-    background-color: #6b5f74;
+    background-color: #70369d;
     flex:1;
-    
     margin-top: 45px;
     margin-bottom: 0px;
 }
 
-.violet-button:hover
-{
-    background-color: #70369d;
-    color: black;
-}

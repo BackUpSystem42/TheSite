@@ -5,6 +5,21 @@ p
 	margin-top: 0;
 	margin-bottom: 0;
 	text-align: center;
+
+	padding: 8px 8px 5px 5px;
+}
+li
+{
+	color: white;
+	margin-top: 0;
+	margin-bottom: 0;
+	
+	padding: 8px 8px 5px 5px;
+}
+
+h3
+{
+	color: white;
 }
 
 header, footer
@@ -25,7 +40,6 @@ header, footer
 body
 {
 	background-color: black;
-	/* background-image: linear-gradient(to top, black, #936969, black); */
 }
 
 nav
@@ -80,36 +94,27 @@ a:link, a:visited
 
 }
 
-.text-format
-{
-	font-family: Arial;
-	font-size: 50px;
-	
-}
 
-.back-logo
+#logo
 {
 	width: 250px;
 	object-fit: cover;
 	image-rendering: pixelated;
+	transition: opacity 2s;
 	
 	display: block;
 	margin-left: auto;
 	margin-right: auto;
 	
-	z-index: 1;
-	
-	
-	
-	
+	z-index: 1;	
 }
-.logo
+#front-logo,#back-logo
 {
 	width: 250px;
 	object-fit: cover;
 	image-rendering: pixelated;
 	opacity: 0;
-	transition: opacity 3s;
+	transition: opacity 2s;
 
 	z-index: 2;
 	position: absolute;
@@ -117,10 +122,6 @@ a:link, a:visited
 	left:50%;
 
 	transform: translate(-50%, -50%);
-
-
-	
-	
 	
 }
 
@@ -142,6 +143,7 @@ a:link, a:visited
 	border:solid;
 	border-color: white;
 
+	padding: 5px 5px 5px 5px;
 	flex: 2;
 }
 

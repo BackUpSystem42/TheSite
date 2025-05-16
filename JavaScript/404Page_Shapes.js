@@ -86,8 +86,7 @@ ctx.lineWidth = 0;
 ctx.stroke();
 
 //Color shape
-grad = ctx.createRadialGradient(canvas.width/2, canvas.height/2, canvas.width/10, 
-                                canvas.width/2, canvas.height/2, canvas.width/50);
+grad = ctx.createRadialGradient(canvas.width/2, canvas.height/2, canvas.width/10, canvas.width/2, canvas.height/2, canvas.width/50);
 grad.addColorStop(0, "white");
 
 
