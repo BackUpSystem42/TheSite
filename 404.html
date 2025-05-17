@@ -2,6 +2,7 @@
 <html>
     
     <head>
+        <title>Lost Place</title>
         <link rel = "stylesheet" href = "CSS_Template/404Page_Format.css">
     </head>
 
@@ -19,13 +20,33 @@
         Sorry, your browser does not support canvas.
         </canvas> 
 
-        <p>
-            It seems that you are lost. Nothing is ready. Come back later, as I finish things here.
-        </p>
+        <canvas id = "emptySpace">
+             Sorry, your browser does not support canvas.
+        </canvas>
+           
+        <div id = "scene">
+            <p class = "speech-box">
+                It seems that you are lost. Nothing is ready. Come back later, as I finish things here.
+            </p>
+
+            <img src = "Pictures/404_Image.png">
+
+            <img src = "Pictures/Box1.png">
+            <img src = "Pictures/Box2.png">
+            <img src = "Pictures/Box3.png">
+            <img src = "Pictures/Can.png">
+            <canvas id = "speech-box">
+                Sorry, your browser does not support canvas.
+            </canvas>
+        </div>
+        
+       
+       
     
         <script src = "JavaScript/404Page_Shapes.js">
         </script>
 
     </body>
+    
     
 </html>

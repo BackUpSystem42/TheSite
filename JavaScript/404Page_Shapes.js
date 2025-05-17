@@ -1,5 +1,6 @@
 //constant and delcare variables
 const element = document.getElementById("_404Page_Body");
+let pageHeight = 0;
 let canvas;
 let ctx;
 
@@ -9,6 +10,7 @@ let h;
 
 let offset;
 let grad; //gradient
+//-----------------------------------------------------
 //ceiling shape
 canvas = document.getElementById("ceiling");
 ctx = canvas.getContext("2d");
@@ -42,14 +44,14 @@ ctx.strokeStyle = "rgb(0 0 0 / 0%)";
 ctx.lineWidth = 0;
 // Draw it
 ctx.stroke();
-
+pageHeight += h;
 //Color shape
 grad = ctx.createLinearGradient(0,0, 0,h);
 grad.addColorStop(1, "white");
 grad.addColorStop(0, "darkgray");
 ctx.fillStyle = grad;
 ctx.fill();
-// location.reload();
+
 //------------------------------------------------------
 //end of the hall
 /*
@@ -63,6 +65,7 @@ b                   |
 
 canvas = document.getElementById("endHallway");
 ctx = canvas.getContext("2d");
+
 
 a = element.offsetWidth / 3;
 b = a * 1.5;
@@ -84,6 +87,7 @@ ctx.strokeStyle = "rgb(0 0 0 / 0%)";
 ctx.lineWidth = 0;
 // Draw it
 ctx.stroke();
+pageHeight += b;
 
 //Color shape
 grad = ctx.createRadialGradient(canvas.width/2, canvas.height/2, canvas.width/10, canvas.width/2, canvas.height/2, canvas.width/50);
@@ -131,7 +135,7 @@ ctx.strokeStyle = "rgb(0 0 0 / 0%)";
 ctx.lineWidth = 0;
 // Draw it
 ctx.stroke();
-
+pageHeight += h + offset;
 //Color shape
 grad = ctx.createLinearGradient(0,0, 0,100);
 grad.addColorStop(0, "white");
@@ -139,7 +143,58 @@ grad.addColorStop(.75, "darkgray");
 ctx.fillStyle = grad;
 ctx.fill();
 
- 
+//------------------------------------------------------
+//empty space shape
+canvas = document.getElementById("emptySpace");
+ctx = canvas.getContext("2d");
+
+//end of the hall
+/*
+----------a----------
+|                   |
+|                   |
+b                   |
+|                   |
+---------------------
+*/
+a = element.offsetWidth;
+console.log(window.innerHeight,pageHeight);
+b = window.innerHeight -pageHeight -15;
+console.log(b);
+if(b < 0)
+{
+  b =0;
+}
+
+canvas.width = element.offsetWidth;
+canvas.height = b;
+// Define a new path:
+ctx.beginPath();
+
+// Define a start point
+ctx.moveTo(0, 0);
+
+// Define points
+ctx.lineTo(0, b);
+ctx.lineTo(a, b);
+ctx.lineTo(a, 0);
+
+
+
+// ctx.strokeStyle = "rgb(0 0 0 / 0%)";
+ctx.lineWidth = 0;
+// Draw it
+ctx.stroke();
+
+//Color shape
+
+ctx.fillStyle = "darkgray";
+ctx.fill();
+
+//------------------------------------------------------
+//relocate scene
+const scene = document.getElementById("scene");
+scene.style.bottom = b +"px";
 //------------------------------------------------------
 //when resize the window it will redraw the shapes
 window.addEventListener

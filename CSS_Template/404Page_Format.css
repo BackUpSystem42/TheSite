@@ -7,5 +7,37 @@
     margin-left: 0px;
     margin-right: 0px;
 
-    background-image:linear-gradient(to right, darkgray , white , darkgray );
+    padding-top: 0px;
+    padding-bottom: 0px;
+
+    /* background-image:linear-gradient(to right, darkgray , white , darkgray ); */
+    background-image: radial-gradient(white, darkgray 75%);
+}
+
+.speech-box
+{
+    background-color: white;
+    
+    border-radius: 30px;
+    border: solid;
+    border-width: 1px;
+
+    z-index: 2;
+    width: 200px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    padding-left: 23px;
+    padding-right: 5px;
+}
+#speech-box
+{
+    z-index: 1;
+}
+
+#scene
+{
+    position: absolute;
+
+    left: 5%;
+    bottom: 17%
 }
