@@ -163,7 +163,7 @@ b = window.innerHeight -pageHeight -15;
 console.log(b);
 if(b < 0)
 {
-  b =0;
+  b = 0;
 }
 
 canvas.width = element.offsetWidth;
@@ -191,10 +191,6 @@ ctx.stroke();
 ctx.fillStyle = "darkgray";
 ctx.fill();
 
-//------------------------------------------------------
-//relocate scene
-const scene = document.getElementById("scene");
-scene.style.bottom = b +"px";
 //------------------------------------------------------
 //when resize the window it will redraw the shapes
 window.addEventListener

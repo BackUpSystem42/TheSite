@@ -14,9 +14,33 @@
     background-image: radial-gradient(white, darkgray 75%);
 }
 
-.speech-box
+
+#speech-box
 {
-    background-color: white;
+    z-index: 1;
+}
+
+#scene
+{
+    position: absolute;
+
+    left: 5%;
+    bottom: 1px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+
+  margin-left: auto;
+  margin-right: auto;
+}
+.tooltip .speech-box {
+  visibility: hidden;
+
+  background-color: white;
     
     border-radius: 30px;
     border: solid;
@@ -28,16 +52,34 @@
     padding-bottom: 2px;
     padding-left: 23px;
     padding-right: 5px;
-}
-#speech-box
-{
-    z-index: 1;
-}
-
-#scene
-{
+  
+    /* Position the tooltip */
     position: absolute;
+    z-index: 3;
+    top: 1px;
+    left: 60%;
+}
+.tooltip:hover .speech-box
+{
+    visibility: visible;
+}
 
-    left: 5%;
-    bottom: 17%
+.char
+{
+    width: 350px;
+    object-fit: cover;
+	image-rendering: pixelated;
+
+    position: relative;
+    z-index: 5;
+}
+
+.object
+{
+    width: 178px;
+    object-fit: cover;
+	image-rendering: pixelated;
+
+    position: absolute;
+    z-index: 2;
 }
