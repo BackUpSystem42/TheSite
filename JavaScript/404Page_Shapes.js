@@ -192,6 +192,10 @@ ctx.fillStyle = "darkgray";
 ctx.fill();
 
 //------------------------------------------------------
+//relocate scene
+const scene = document.getElementById("scene");
+scene.style.bottom = b +"px";
+//------------------------------------------------------
 //when resize the window it will redraw the shapes
 window.addEventListener
 ("resize",

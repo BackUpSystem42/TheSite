@@ -20,7 +20,7 @@
     z-index: 1;
 }
 
-#scene
+#char
 {
     position: absolute;
 
@@ -64,7 +64,7 @@
     visibility: visible;
 }
 
-.char
+.char-image
 {
     width: 350px;
     object-fit: cover;
