@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+
+	<head lang = "en"> 
+		<title>Social</title>
+		<link rel = "stylesheet" href = "/Assets/CSS/GeneralFormat.css">
+
+    <style>
+      :root
+      {
+        --prime-color:  #70369d;
+
+        --alt-red-color:  rgb(111, 53, 156);
+        --alt-orange-color: rgb(206, 147, 251);
+        --alt-yellow-color: rgb(235, 210, 255);
+        --alt-green-color:  rgb(186, 129, 233);
+        --alt-blue-color: rgb(149, 91, 195);
+        --alt-indigo-color:  rgb(89, 31, 134);
+        --alt-violet-color: rgb(102, 44, 147);
+      }
+
+      #languageSelector
+      {
+        background-color: var(--prime-color); 
+      }
+      #pageBody
+      {
+        background-image: linear-gradient(to top, black, var(--prime-color), black);
+      }
+     
+    </style>
+	</head>
+
+	<body id = "pageBody">
+  <div id = "background-image" >
+
+    <div class ="banner" >
+       <!--Name blur-->
+      <div class = "background-blur"  style="top: 185px; width: 350px; height: 35px; border-radius: 15px;"></div>
+      <!--logo blur-->
+      <div class = "background2-blur"></div>
+      
+      <!--The eye blur-->
+      <div class = "background-blur" style="top: 60px; width: 15px; height: 35px;"></div>
+
+      <div class = "name">
+        <img src="/Assets/Pictures/Logo/V3 Logo_V5_Boho Rainbow Text-Center.png" style="height: 80px;">
+      </div>
+      <div class="banner">
+         <img src = "/Assets/Pictures/Ascent/Ascent7_Violet.png" class = "side-detail" style="transform: scaleX(-1);">
+            
+        <img src="/Assets/Pictures/Logo/V2 Logo_V7.png" class = "logo">
+            
+        <img src = "/Assets/Pictures/Ascent/Ascent7_Violet.png" class = "side-detail">
+      </div>   
+    </div>
+
+    <select id="languageSelector">
+      <option value="/en/" selected>English</option>
+      <option value="/es/">Español</option>
+    </select>
+   
+    <!-- Navigation placeholder -->
+    <div id="navbar-placeholder">navbar-placeholder</div> 
+		<!--#include virtual="/x/BoilerPlate/OptionPage.html" -->
+    <!--Copy To Here-->
+
+
+    <div class="page-container">
+      <div style="height: 500px;" class="small-container">
+        <p>
+          this a different page
+        </p>
+      </div>
+    </div>
+    
+    <div class="page-container">
+      <div style="height: 500px;" class="small-container"> 
+        <p>
+          This the boils plate page
+        </p>
+      </div>
+    </div>
+    
+    <div class="page-container">
+      <div style="height: 500px;" class="small-container">
+        <p>
+          anothetr section
+        </p>
+      </div>
+    </div>
+    
+  </div>
+	</body>
+
+  <script src = "/Assets/JavaScript/FetchElements.js">
+  </script>
+  <script src = "/Assets/JavaScript/ChangeLanguage.js">
+  </script>
+
+</html>

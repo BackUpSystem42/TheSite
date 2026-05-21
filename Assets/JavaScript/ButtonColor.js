@@ -18,12 +18,6 @@ const button_name = ["red-button", "orange-button", "yellow-button", "green-butt
 
 let colorModeRainbow = [];
 
-let backImg = document.getElementById("back-logo");
-
-let frontImg = document.getElementById("front-logo");
-
-let imgFlip = true;
-
 let pageIndex;
 
 function pageMonochromeShift(base, added, opacity)
@@ -82,19 +76,19 @@ function mouseOver(index)
 {
     document.getElementById(button_name[index]).style.backgroundColor = RBG2Text(rainbow[index]);
     
-    GetLogo(index);
+    // GetLogo(index);
 }
 
 function mouseOut(index)
 {
     document.getElementById(button_name[index]).style.backgroundColor = RBG2Text(colorModeRainbow[index]);
 
-    GetLogo(pageIndex);
+    // GetLogo(pageIndex);
 }
 
 function UpdatePageColor(index)
 {
-    GetLogo(index);
+    // GetLogo(index);
     let appledColor = rainbow[index]; 
     let newColor = {};
     for(let i = 0; i < 7; i++)
@@ -107,70 +101,11 @@ function UpdatePageColor(index)
         colorModeRainbow.push(newColor);
     }
 
-    console.log(colorModeRainbow);
+    // console.log(colorModeRainbow);
 
-    document.body.style.backgroundImage = "linear-gradient(to top, black,"+ RBG2Text(appledColor) + ", black)";
+    // document.body.style.backgroundImage = "linear-gradient(to top, black,"+ RBG2Text(appledColor) + ", black)";
 
     pageIndex = index
 }
 
-function GetLogo(index)
-{
-    let img;
-    let disableImg;
-    
-    if(imgFlip)
-    {
-        img = frontImg;
-        disableImg = backImg;
-    }
-    else
-    {
-        img = backImg;
-        disableImg = frontImg;
-    }
 
-    switch(index)
-    {
-        case 0: 
-            img.src = "Pictures/Logo_V3_RedFilter.png";
-            break;
-        case 1: 
-            img.src = "Pictures/Logo_V3_OrangeFilter.png";
-            break;
-        case 2: 
-            img.src = "Pictures/Logo_V3_YellowFilter.png";
-            break;
-        case 3: 
-            img.src = "Pictures/Logo_V3_GreenFilter.png";
-            break;
-        case 4: 
-            img.src = "Pictures/Logo_V3_BlueFilter.png";
-            break;
-        case 5: 
-            img.src = "Pictures/Logo_V3_IndigoFilter.png";
-            break;
-        case 6: 
-            img.src = "Pictures/Logo_V3_VioletFilter.png";
-            break;
-        default:
-            img = "Pictures/Logo_V3.png";
-    }
-
-    img.style.opacity = 1;
-    disableImg.style.opacity = 0;
-
-    imgFlip = !imgFlip;
-
-}
-
-
-
-// let testColor = RBG2Text(rainbow[0]);
-// let testColor = RBG2Text(pageMonochromeShift(red, yellow, 1));
-// // document.getElementById("red-button").style.backgroundColor = testColor;
-// // document.getElementById("logo").addEventListener("loadeddata", function() {UpdatePageButtons(1);},
-// // {once: true});
-// // document.body.style.backgroundColor = RBG2Text(red);
-// document.body.style.backgroundColor = testColor;
-// document.body.style.backgroundImage = "linear-gradient(to top, black,"+ testColor+", black)"

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<title>Art</title>
+		<link rel = "stylesheet" href = "/Assets/CSS/GeneralFormat.css">
+
+		<style>
+			:root
+			{
+				--prime-color: rgb(250, 235, 54);
+
+				--alt-red-color:  rgb(97, 89, 0);
+				--alt-orange-color: rgb(207, 192, 10);
+				--alt-yellow-color: rgb(253, 238, 56);
+				--alt-green-color:  rgb(187, 173, 0);
+				--alt-blue-color: rgb(142, 131, 0);
+				--alt-indigo-color:  rgb(71, 65, 0);
+				--alt-violet-color: rgb(86, 80, 0);
+			}
+
+			#languageSelector
+			{
+				background-color: var(--prime-color); 
+			}
+			#pageBody
+			{
+				background-image: linear-gradient(to top, black, var(--prime-color), black);
+			}
+		</style>
+	</head>
+
+	<body id = "pageBody">
+	<div id = "background-image" >
+    <!--Copy From Here-->
+		
+		<div class ="banner" >
+			<!--Name blur-->
+			<div class = "background-blur"  style="top: 185px; width: 350px; height: 35px; border-radius: 15px;"></div>
+			<!--logo blur-->
+			<div class = "background2-blur"></div>
+			
+			<!--The eye blur-->
+			<div class = "background-blur" style="top: 60px; width: 15px; height: 35px;"></div>
+
+			<div class = "name">
+				<img src="/Assets/Pictures/Logo/V3 Logo_V5_Boho Rainbow Text-Center.png" style="height: 80px;">
+			</div>
+			<div class="banner">
+				<img src = "/Assets/Pictures/Ascent/Ascent4_Yellow.png" class = "side-detail" style="transform: scaleX(-1);">
+            
+        		<img src="/Assets/Pictures/Logo/V2 Logo_V7.png" class = "logo">
+            
+        		<img src = "/Assets/Pictures/Ascent/Ascent4_Yellow.png" class = "side-detail">
+			</div>   
+		</div>
+
+		<select id="languageSelector">
+			<option value="/en/Art.html" selected>English</option>
+			<option value="/es/Art.html">Español</option>
+		</select>
+
+    	<!-- Navigation placeholder -->
+   		 <div id="navbar-placeholder"></div> 
+		<!--#include virtual="/x/BoilerPlate/OptionPage.html" -->
+   		 <!--Copy To Here-->
+
+
+		<div class="page-container">
+			 <div style="height: 500px;" class="small-container">
+				<p>
+					this a different page
+				</p>
+			</div>
+		</div>
+
+   
+		<div class="page-container">
+			<div style="height: 500px;" class="small-container"> 
+      			<p>
+					This the boils plate page
+      			</p>
+    		</div>
+		</div>
+
+		<div class = "page-container">
+			<div style="height: 500px;" class="small-container">
+      			<p>
+        			anothetr section
+      			</p>
+    		</div>
+		</div>
+    
+	</div>
+	</body>
+
+	<script src = "/Assets/JavaScript/FetchElements.js">
+	</script>
+	<script src = "/Assets/JavaScript/ChangeLanguage.js">
+	</script>
+
+</html>

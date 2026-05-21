@@ -1,3 +1,29 @@
+
+
+a
+{
+    color: white;
+    background-color: rgba(0, 0, 0, .5);
+    text-align: center;
+    padding: 5px 10px;
+
+}
+a:link, a:visited
+{
+	text-decoration: none;	
+}
+.message-container
+{
+    /* display: inline; */
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+}
+
 #_404Page_Body
 {
     display: flex;

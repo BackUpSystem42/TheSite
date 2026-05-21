@@ -1,50 +1,74 @@
-<! DOCTYPE html>
-<html>
+<!DOCTYPE html>
+<html lang = "en">
 
 	<head>
-		<title>About Page</title>
-		<link rel = "stylesheet" href = "CSS_Template/General_Format.css">
-		<link rel = "stylesheet" href = "CSS_Template/Navigation_Button.css">
+		<title>About</title>
+		<link rel = "stylesheet" href = "/Assets/CSS/GeneralFormat.css">
+
+    <style>
+      :root
+      {
+        --prime-color:  rgb(255, 165, 0);
+
+        --alt-red-color:  rgb(120, 78, 0);
+        --alt-orange-color: rgb(255,168,6);
+        --alt-yellow-color: rgb(255, 219, 151);
+        --alt-green-color:  rgb(232, 150, 0);
+        --alt-blue-color: rgb(176, 114, 0);
+        --alt-indigo-color:  rgb(88, 57, 0);
+        --alt-violet-color: rgb(107, 69, 0);
+      }
+
+      #languageSelector
+      {
+        background-color: var(--prime-color); 
+      }
+      #pageBody
+      {
+        background-image: linear-gradient(to top, black, var(--prime-color), black);
+      }
+     
+    
+    </style>
 	</head>
 
 
-	<body id = "PageBody" onload = "UpdatePageColor(1)">
-
-		<header>
-			<div class = "web-name">
-				Arco&iacuteris Monocrom&aacutetico
-			</div>
-			
-			<img id = "logo" src = "Pictures/Eye_WithRainbow.png">
-			<img id = "back-logo" src = "Pictures/Logo_V3.png">
-			<img id = "front-logo" src = "Pictures/Logo_V3.png">
+	<body id = "pageBody">
+	<div id = "background-image" >
 		
-				
-			<div class = "page-container">
-				<a id = "red-button" onmouseover = "mouseOver(0)" onmouseout="mouseOut(0)" class = "page-link" href = "https://arcoirismonocromatico.com/">
-					Home
-				</a>
-
-				<a id = "orange-button" onmouseover = "mouseOver(1)" onmouseout="mouseOut(1)" class = "page-link"  href = "AboutPage.html">
-					About
-				</a>
-
-				<a id = "yellow-button" onmouseover = "mouseOver(2)" onmouseout="mouseOut(2)" class = "page-link" href = "GamePage.html">
-					Game
-				</a>
-
-				<a id = "green-button" onmouseover = "mouseOver(3)" onmouseout="mouseOut(3)" class = "page-link" href = "404.html"></a>
-
-				<a id = "blue-button" onmouseover = "mouseOver(4)" onmouseout="mouseOut(4)" class = "page-link" href = "404.html"></a>
-
-				<a id = "indigo-button" onmouseover = "mouseOver(5)" onmouseout="mouseOut(5)" class = "page-link" href = "404.html"></a>
-
-				<a id = "violet-button" onmouseover = "mouseOver(6)" onmouseout="mouseOut(6)" class = "page-link" href = "404.html"></a>
-			</div>
 			
-		</header>
+		<div class ="banner" >
+			
+			<!--Name blur-->
+			<div class = "background-blur"  style="top: 185px; width: 350px; height: 35px; border-radius: 15px;"></div>
+			<!--logo blur-->
+			<div class = "background2-blur"></div>
+			
+			<!--The eye blur-->
+			<div class = "background-blur" style="top: 60px; width: 15px; height: 35px;"></div>
+
+			<div class = "name">
+				<img src="/Assets/Pictures/Logo/V3 Logo_V5_Boho Rainbow Text-Center.png" style="height: 80px;">
+			</div>
+			<div class="banner">
+				<img src = "/Assets/Pictures/Ascent/Ascent3_Orange.png" class = "side-detail" style="transform: scaleX(-1);">
+            
+	        	<img src="/Assets/Pictures/Logo/V2 Logo_V7.png" class = "logo">
+            
+    		    <img src = "/Assets/Pictures/Ascent/Ascent3_Orange.png" class = "side-detail">
+			</div>   
+		</div>
+
+		<select id="languageSelector">
+			<option value="/en/About.html" selected>English</option>
+			<option value="/es/About.html">Español</option>
+		</select>
 		
-	<div class = "page-container">
+		<!-- Navigation placeholder -->
+		<div id="navbar-placeholder">navbar-placeholder</div> 
+		<!--#include virtual="/x/BoilerPlate/OptionPage.html" -->
+
+		<div class = "page-container">
 
 			<div class = "large-container">
 				
@@ -109,20 +133,9 @@
 			<div class = "small-empty-space"></div>
 			
 		</div> 
-
-
-		<footer>
-			<div>
-				<p onclick = "goToTop()" class = "clickable">
-					Top Page
-				</p>
-			</div>
-		</footer>
-
-		<script src = "JavaScript/ColorMixer.js"></script>
-		<script src = "JavaScript/PageFunctions.js"></script>
+	</div>
 	</body>
-
-	
-
+	<script src = "/Assets/JavaScript/FetchElements.js">
+  	</script>
+  	<script src = "/Assets/JavaScript/ChangeLanguage.js"></script>
 </html>

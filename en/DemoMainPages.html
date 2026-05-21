@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+
+	<head lang = "en">
+   
+		<title>Demo Page</title>
+		<link rel = "stylesheet" href = "/Assets/CSS/GeneralFormat.css">
+    <link rel = "stylesheet" href="/Assets/CSS/NavigationButton.css">
+
+    
+
+    <link rel = "alternate" hreflang="en" href="https://arcoirismonocromatico.com/en/DemoMainPages/">
+    <link rel = "alternate" hreflang="es" href="https://arcoirismonocromatico.com/es/DemoMainPages/">
+    <link rel = "alternate" hreflang="x-default" href="https://arcoirismonocromatico.com/en/DemoMainPages/">
+
+    <style>
+      :root
+      {
+        --prime-color: rgb(255, 255, 255);
+
+        --alt-red-color:  rgb(82, 82, 82);
+        --alt-orange-color: rgb(176, 176, 176);
+        --alt-yellow-color: rgb(222, 222, 222);
+        --alt-green-color:  rgb(158, 158, 158);
+        --alt-blue-color: rgb(120, 120, 120);
+        --alt-indigo-color:  rgb(60, 60, 60);
+        --alt-violet-color: rgb(73, 73, 73);
+
+        --side-detail: url("/Assets/Pictures/Ascent/Ascent1_Full.png");
+      }
+
+      #languageSelector
+      {
+        background-color: var(--prime-color); 
+      }
+      #pageBody
+      {
+        background-image: linear-gradient(to top, black, var(--prime-color), black);
+      }
+ 
+      /* #background-image
+      {
+        background-image: url("/Assets/Pictures/ReapetPattern/PatternMaking_SingleTile.png"); 
+      } */
+   
+    </style>
+    
+	</head>
+
+	<body id = "pageBody" ></body>
+  <div id = "background-image">
+
+    <!--The logo section-->
+    <!-- <div id = "logobanner-placeholder">logobanner-placerholder</div> -->
+    <div class ="banner" >
+      
+      <!--Name blur-->
+      <div class = "background-blur"  style="top: 185px; width: 350px; height: 35px; border-radius: 15px;"></div>
+      <!--logo blur-->
+      <div class = "background2-blur"></div>
+      
+      <!--The eye blur-->
+      <div class = "background-blur" style="top: 60px; width: 15px; height: 35px;"></div>
+
+      <div class = "name">
+        <img src="/Assets/Pictures/Logo/V3 Logo_V5_Boho Rainbow Text-Center.png" style="height: 80px;">
+      </div>
+      <div class="banner">
+        <img src = "/Assets/Pictures/Ascent/Ascent1_White.png" class = "side-detail" style="transform: scaleX(-1);">
+            
+        <img src="/Assets/Pictures/Logo/V2 Logo_V7.png" class = "logo">
+            
+        <img src = "/Assets/Pictures/Ascent/Ascent1_White.png" class = "side-detail">
+      </div>   
+    </div>
+
+    <select id="languageSelector">
+      <option value="/en/DemoMainPages.html" selected>English</option>
+      <option value="/es/DemoMainPages.html">Español</option>
+    </select>
+  
+
+   
+    <div id="navbar-placeholder"></div> 
+      
+		<!--#include virtual="/x/BoilerPlate/OptionPage.html" -->
+    <div class="page-container">
+      <div style="height: 100px;" class="small-container">
+        <p>
+          This a template page that for the main site (the arcoiris Monocromático concept)
+        </p> 
+    </div>
+   </div>
+
+   <div class="page-container">
+     <div class="small-container">
+        <h3>
+          This is header format
+        </h3>
+        <p>
+          This is paragraph format
+        </p> 
+
+        <ol>
+          <li>this list format</li>
+        </ol>
+        <ul>
+          <li>this format</li>
+        </ul>
+      </div>
+   </div>
+   
+   <div class="page-container">
+      <div class = "small-empty-space">this is a small empty container</div>
+      <div style="height: 100px;" class="small-container"> 
+        <p>
+          This is a small container. size of 1 flex
+        </p>
+      </div>
+   </div>
+
+   <div class = "page-container">
+      <div style="height: 100px;" class="large-container">
+        <p>
+          This is a large container. size of 2 flex
+        </p>
+        
+      </div>
+      <div class="small-empty-space">
+          this is a small container as well
+      </div>
+   </div>
+  </div>
+
+	</body>
+
+  <script src = "/Assets/JavaScript/FetchElements.js">
+  </script>
+  <script src = "/Assets/JavaScript/ChangeLanguage.js">
+  </script>
+
+</html>
