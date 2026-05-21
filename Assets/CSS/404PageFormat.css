@@ -1,0 +1,111 @@
+
+
+a
+{
+    color: white;
+    background-color: rgba(0, 0, 0, .5);
+    text-align: center;
+    padding: 5px 10px;
+
+}
+a:link, a:visited
+{
+	text-decoration: none;	
+}
+.message-container
+{
+    /* display: inline; */
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+}
+
+#_404Page_Body
+{
+    display: flex;
+    flex-direction: column;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+
+    padding-top: 0px;
+    padding-bottom: 0px;
+
+    /* background-image:linear-gradient(to right, darkgray , white , darkgray ); */
+    background-image: radial-gradient(white, darkgray 75%);
+}
+
+
+#speech-box
+{
+    z-index: 1;
+}
+
+#char
+{
+    position: absolute;
+
+    left: 5%;
+    bottom: 1px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+
+  margin-left: auto;
+  margin-right: auto;
+}
+.tooltip .speech-box {
+  visibility: hidden;
+
+  background-color: white;
+    
+    border-radius: 30px;
+    border: solid;
+    border-width: 1px;
+
+    z-index: 2;
+    width: 200px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    padding-left: 23px;
+    padding-right: 5px;
+  
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 3;
+    top: 1px;
+    left: 60%;
+}
+.tooltip:hover .speech-box
+{
+    visibility: visible;
+}
+
+.char-image
+{
+    width: 350px;
+    object-fit: cover;
+	image-rendering: pixelated;
+
+    position: relative;
+    z-index: 5;
+}
+
+.object
+{
+    width: 178px;
+    object-fit: cover;
+	image-rendering: pixelated;
+
+    position: absolute;
+    z-index: 2;
+}

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang = "en">
+
+	<head>
+		<title>N/A</title>
+		<link rel = "stylesheet" href = "/Assets/CSS/GeneralFormat.css">
+
+    <style>
+      :root
+      {
+        --prime-color:  #4b369d;
+        --alt-red-color:  rgb(85, 64, 168);
+        --alt-orange-color: rgb(179, 160, 255);
+        --alt-yellow-color: rgb(224, 216, 255);
+        --alt-green-color:  rgb(162, 140, 244);
+        --alt-blue-color: rgb(123, 102, 206);
+        --alt-indigo-color:  rgb(63, 42, 145);
+        --alt-violet-color: rgb(76, 55, 158);
+      }
+
+      #languageSelector
+      {
+        background-color: var(--prime-color); 
+      }
+      #pageBody
+      {
+        background-image: linear-gradient(to top, black, var(--prime-color), black);
+      }    
+    </style>
+	</head>
+
+	<body id = "pageBody">
+  <div id = "background-image" >
+
+    <div class ="banner" >
+
+      <!--Name blur-->
+      <div class = "background-blur"  style="top: 185px; width: 350px; height: 35px; border-radius: 15px;"></div>
+      <!--logo blur-->
+      <div class = "background2-blur"></div>
+      
+      <!--The eye blur-->
+      <div class = "background-blur" style="top: 60px; width: 15px; height: 35px;"></div>
+      
+      <div class = "name">
+        <img src="/Assets/Pictures/Logo/V3 Logo_V5_Boho Rainbow Text-Center.png" style="height: 80px;">
+      </div>
+      <div class="banner">
+        <img src = "/Assets/Pictures/Ascent/Ascent1_White.png" class = "side-detail" style="transform: scaleX(-1);">
+            
+        <img src="/Assets/Pictures/Logo/V2 Logo_V7.png" class = "logo">
+            
+        <img src = "/Assets/Pictures/Ascent/Ascent1_White.png" class = "side-detail">
+      </div>   
+    </div>
+
+    <select id="languageSelector">
+      <option value="/en/" selected>English</option>
+      <option value="/es/">Español</option>
+    </select>
+    
+    <!-- Navigation placeholder -->
+    <div id="navbar-placeholder">navbar-placeholder</div> 
+		<!--#include virtual="/x/BoilerPlate/OptionPage.html" -->
+    <!--Copy To Here-->
+
+
+    <div class="page-container">
+      <div style="height: 500px;" class="small-container">
+        <p>
+          I am not sure what to add to this page. 
+        </p>
+         <p>
+         At this moment.
+        </p>
+      </div>
+    </div>
+    
+    
+    
+  </div> 
+	</body>
+
+  <script src = "/Assets/JavaScript/FetchElements.js">
+  </script>
+  <script src = "/Assets/JavaScript/ChangeLanguage.js">
+  </script>
+
+</html>

@@ -1,0 +1,238 @@
+a:link, a:visited
+{
+	text-decoration: none;	
+}
+
+body
+{
+    margin: 0px;
+    background-image: radial-gradient(circle, white 25%, black 75%);
+}
+
+.logo
+{
+    width: 400px;
+   margin: auto;
+    /* height: 100px; */
+    
+}
+.container
+{
+    display: flex;
+    
+    flex-direction: column;
+    justify-content: center;
+}
+
+.optionButton
+{
+    background-color: rgba(0,0,0,.5);
+    color: white;
+    text-shadow: 2px 2px 5px black;
+    flex:1;
+    text-align: center;
+    border-radius: 5px;
+    padding-top: 5px;
+	padding-bottom: 5px;
+	padding-left: 15px;
+	padding-right: 15px;
+
+    margin-left: 5px;
+	margin-right: 5px;
+
+    transition: background-color 1.5s, color 1s;
+    
+}
+.optionButton:hover
+{
+    transition: background-color .5s;
+    /* text-decoration: underline; */
+}
+
+#navBar
+{
+    display: flex;
+    flex-direction: row;
+    z-index: 5;
+
+    width: 720px;
+
+    position: absolute;
+   
+    top: 300px;
+    left: 50%;
+    transform: translate(-50%, 0%);	
+   
+}
+
+#languageSelector
+{
+	position:absolute;
+	top:5px;
+	right: 5px;
+	width: 100px;
+	border: 0px;
+	color: black;
+	/* background-color: var(--prime-color); */
+	padding: 5px 0px 5px 2px;
+}
+
+#red-button
+{
+   
+    margin-top: 0px;
+    margin-bottom: 45px;
+}
+#red-button:hover
+{
+    background-color:var(--red-color);
+}
+
+#orange-button
+{
+    
+    margin-top: 15px;
+    margin-bottom: 30px;
+}
+#orange-button:hover
+{
+     background-color: var(--orange-color);
+}
+
+#yellow-button
+{
+    
+    margin-top: 30px;
+    margin-bottom: 15px;
+}
+#yellow-button:hover
+{
+    background-color:var(--yellow-color);
+   
+}
+
+#green-button
+{
+   
+    margin-top: 45px;
+    margin-bottom: 0px;
+}
+#green-button:hover
+{
+    background-color:var(--green-color);
+}
+
+#blue-button
+{
+    
+    margin-top: 30px;
+    margin-bottom: 15px;
+}
+#blue-button:hover
+{
+    background-color:var(--blue-color);
+}
+
+#indigo-button
+{
+   
+    margin-top: 15px;
+    margin-bottom: 30px;
+}
+#indigo-button:hover
+{
+    background-color: var(--indigo-color);
+}
+
+#violet-button
+{
+   
+    margin-top: 0px;
+    margin-bottom: 45px;
+}
+#violet-button:hover
+{
+    background-color: var(--violet-color);
+}
+
+
+
+.drops
+{
+    /* display:inline-table; */
+    position: inherit;
+    opacity: 0;
+    animation: dropFall 1.2s infinite;
+
+    animation-timing-function: ease-in;
+    width: 20px;
+    height: 20px;
+    background-color:Pink;
+    mask-image: url(/Assets//Pictures/Cloud/batch_Drop1.png);
+    mask-repeat: no-repeat;
+    mask-position: center;
+    mask-size: 8px 20px;
+}
+
+.dropStart
+{
+    display: inline;
+    position: relative;
+}
+.dropContainer
+{
+    display: flex;
+    position: absolute;
+    /* justify-content: center; */
+    top: 250px;
+    left: 50%;
+    transform: translate(-50%, 0%);	
+}
+
+@keyframes dropFall
+{
+    0%{top:0px; opacity: 0;}
+    20%{top:10px; opacity: 1;}
+    100%{top:150px; opacity: 0;}
+    
+}
+
+@media screen and (max-width: 750px)
+{
+    .logo
+    {
+        width: 100%;
+        /* background-color: pink; */
+    }
+    #navBar
+    { 
+        display: flex;
+        flex-wrap: wrap; /* allow items to move to next line */
+        gap: 10px;   
+
+       width: auto;
+        position: relative;
+        transform: unset;
+        left: unset;
+        top: unset
+
+       
+
+    }
+     #red-button, #orange-button,#yellow-button,#green-button,#blue-button,#indigo-button,#violet-button
+    {
+        margin: 0px;
+    }
+    .dropContainer
+    {
+        display: none;
+    }
+}
+
+@media only screen and (max-height: 550px)
+{
+    .dropContainer
+    {
+        display: none;
+    }
+}

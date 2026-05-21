@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+
+	<head lang = "en">
+		<title>Game Page</title>
+		<link rel = "stylesheet" href = "/Assets/CSS/GeneralFormat.css">
+		<link rel = "stylesheet" href = "/Assets/CSS/GamePageFormat.css">
+
+
+		<style>
+			:root
+			{
+				--prime-color: rgb(121, 195, 20);
+
+				--alt-red-color:  rgb(62, 107, 0);
+				--alt-orange-color: rgb(144, 218, 42);
+				--alt-yellow-color: rgb(196, 255, 116);
+				--alt-green-color:  rgb(125, 200, 24);
+				--alt-blue-color: rgb(91, 157, 0);
+				--alt-indigo-color:  rgb(45, 78, 0);
+				--alt-violet-color: rgb(55, 96, 0);
+			}
+
+			#languageSelector
+			{
+				background-color: var(--prime-color); 
+			}
+			#pageBody
+			{
+				background-image: linear-gradient(to top, black, var(--prime-color), black);
+			}
+		
+		</style>
+	</head>
+
+
+	<body id = "pageBody">
+	<div id = "background-image" >
+		
+		<div class ="banner" >
+			<!--Name blur-->
+			<div class = "background-blur"  style="top: 185px; width: 350px; height: 35px; border-radius: 15px;"></div>
+			<!--logo blur-->
+			<div class = "background2-blur"></div>
+				
+			<!--The eye blur-->
+			<div class = "background-blur" style="top: 60px; width: 15px; height: 35px;"></div>
+
+
+			<div class = "name">
+				<img src="/Assets/Pictures/Logo/V3 Logo_V5_Boho Rainbow Text-Center.png" style="height: 80px;">
+			</div>
+			<div class="banner">
+				<img src = "/Assets/Pictures/Ascent/Ascent5_Green.png" class = "side-detail" style="transform: scaleX(-1);">
+			
+				<img src="/Assets/Pictures/Logo/V2 Logo_V7.png" class = "logo">
+			
+				<img src = "/Assets/Pictures/Ascent/Ascent5_Green.png" class = 	"side-detail">
+			</div>   
+		</div>
+
+			<select id="languageSelector">
+				<option value="/en/" selected>English</option>
+				<option value="/es/">Español</option>
+			</select>
+		
+
+		<!-- Navigation placeholder -->
+		<div id="navbar-placeholder">navbar-placeholder</div> 
+		<!--#include virtual="/x/BoilerPlate/OptionPage.html" -->
+		<div class = "page-container">
+
+			<div class = "large-container">
+				<p class = "web-name">
+					No Sequel Work Model.
+				</p>
+				<p>
+					In other words, each game is a standalone experience. Each one is not related nor connect to each other except for the creator. There might be a DLC. In the event there will be a sequel, it will not be consecutively made. 
+				</p>
+			</div>
+			
+		</div>
+		
+
+		<div class = "game-grid">
+			<div class = "tooltip">
+				<a href = "404.html">
+					<img src = "/Assets/Pictures/old/Figure1.png" class = "game-cover">
+					<span class = "tooltiptext">A demostration</span>
+				</a>
+			</div>
+
+			<div class = "tooltip">
+				<a href = "404.html">
+					<img src = "/Assets/Pictures/Old/Figure2.png" class = "game-cover">
+					<span class = "tooltiptext">This is something</span>
+
+				</a>
+			</div>
+
+			<div class = "tooltip">
+				<a href = "404.html">
+					<img src = "/Assets/Pictures/Old/Figure3.png" class = "game-cover">
+					<span class = "tooltiptext">I am not sure what this is</span>
+				</a>
+			</div>
+
+			<div class = "tooltip">
+				<a href = "404.html">
+					<img src = "/Assets/Pictures/Old/Figure4.png" class = "game-cover">
+					<span class = "tooltiptext">This is not staying</span>
+				</a>
+			</div>
+
+			<div class = "tooltip">
+				<a href = "404.html">
+					<img src = "/Assets/Pictures/Old/Figure5.png" class = "game-cover">
+					<span class = "tooltiptext">Temporary</span>
+				</a>
+			</div>
+			
+			<div class = "tooltip">
+				<a href = "404.html">
+					<img src = "/Assets/Pictures/Old/Figure6.png" class = "game-cover">
+					<span class = "tooltiptext">This is okay</span>
+				</a>
+			</div>
+
+			<div class = "tooltip">
+				<a href = "404.html">
+					<img src = "/Assets/Pictures/Old/Figure7.png" class = "game-cover">
+					<span class = "tooltiptext">Just trying something</span>
+				</a>
+			</div>
+
+			<div class = "tooltip">
+				<a href = "404.html">
+					<img src = "/Assets/Pictures/Old/Figure8.png" class = "game-cover">
+					<span class = "tooltiptext">I am not of things to say</span>
+
+				</a>
+			</div>			
+			
+		</div>
+	</div>
+	</body>
+	<script src = "/Assets/JavaScript/FetchElements.js">
+	</script>
+	<script src = "/Assets/JavaScript/ChangeLanguage.js">
+	</script>
+</html>
