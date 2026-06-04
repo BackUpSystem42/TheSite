@@ -40,7 +40,7 @@ body
 {
 	background-color: black;
 	margin: 0;
-
+	overflow-x: hidden; /* Disable horizontal scroll */
 }
 
 div
@@ -71,7 +71,7 @@ footer
 	display: flex;
 	flex-direction: row;
 	justify-content: center;
-	align-items: space-between;
+	/* align-items: space-between; */
 	/* margin-left: 10px; */
 	/* margin-right: 10px; */
 	margin-left: auto;
@@ -257,6 +257,7 @@ footer
 {
 	position: sticky;
 	top:0px;
+	z-index: 10;
 }
 
 @media screen and (max-width: 750px) 

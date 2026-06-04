@@ -2,30 +2,41 @@
 <html>
 
 	<head>
-        <link ref = "style" href="/Assets/CSS/GeneralFormat.css">
-      
+        <link rel = "stylesheet" href="/Assets/CSS/GeneralFormat.css">
+      <style>
+        .root
+        {
+            --prime-color: rgb(0, 0, 0);
+        }
+        body
+        {
+            background-color: white;
+        }
+      </style>
        
 	</head>
+    <body>
 
-	<body>
-        <div class ="banner">
-            <div class = "background"></div>
+	    <div class ="banner" >
+			<!--Name blur-->
+			<div class = "background-blur"  style="top: 185px; width: 350px; height: 35px; border-radius: 15px;"></div>
+			<!--logo blur-->
+			<div class = "background2-blur"></div>
+			
+			<!--The eye blur-->
+			<div class = "background-blur" style="top: 60px; width: 15px; height: 35px;"></div>
+
+			<div class = "name">
+				<img src="/Assets/Pictures/Logo/V3 Logo_V5_Boho Rainbow Text-Center.png" style="height: 80px;">
+			</div>
+			<div class="banner">
+				<img src = "/Assets/Pictures/Ascent/Ascent1_White.png" class = "side-detail" style="transform: scaleX(-1);">
             
-            <!-- <div class = "name" style="color:rgb(17, 36, 36);">Arco&iacuteris Monocrom&aacutetico</div> -->
-            <div class = "name">
-                <img src="/Assets/Pictures/Logo/V3 Logo_V5_Boho Rainbow Text-Center.png" class = "name-image">
-            </div>
-
-            <div class="banner">
-                <img src = "/Assets/Pictures/Old/Box1.png" class = "side-detail">
-                
-                <img src="/Assets/Pictures/Logo/V2 Logo_V7.png" class = "logo">
-                
-                
-                <img src = "/Assets/Pictures/Old/Box1.png" class = "side-detail">
-            </div>
-                        
-        </div>
+        		<img src="/Assets/Pictures/Logo/V2 Logo_V7.png" class = "logo">
+            
+        		<img src = "/Assets/Pictures/Ascent/Ascent1_White.png" class = "side-detail">
+			</div>   
+		</div>
 
 	</body>
 
