@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <style>
+            div{
+                border: solid;
+                border-color: wheat;
+            }
+
+            div.scroll-container {
+                /* display: flex;
+                flex-direction: row; */
+                /* display: grid;
+                grid-template-columns: 95% ; */
+                background-color: #333;
+                overflow-x: auto;
+                overflow-y: hidden;
+                white-space: nowrap;
+                padding: 10px;
+                /* justify-content: center; */
+            }
+
+            div.scroll-container img {
+                padding: 10px;
+            }
+
+            div.scroll-display-container
+            {
+                /* display: flex; */
+                display: inline-flex;
+               
+                width: 95%;
+                height: 400px;
+                border: solid;
+                border-color: aqua;
+                margin-left: 2.5%;
+                margin-right: 2.5%;
+                color: aliceblue;
+                
+            }
+
+         
+           div.vertical-container
+           {
+                /* flex: 1; */
+                flex-direction: column;
+                border: solid;
+                border-color: crimson;   
+           }
+
+           div.vertical-container > div
+           {
+                height: 100%;
+                /* flex: 1; */
+           }
+        
+            div.horizontal-container
+            {
+                /* flex: 1; */
+                flex-direction: row;
+                border: solid;
+                border-color: rgb(220, 20, 167);
+            }
+
+            div.horizontal-container > div
+            {
+               width: 100%;
+               /* flex: 1; */
+            }
+        </style>
+    </head>
+    <body>
+
+        <h2>Image Gallery With Horizontal Scroll</h2>
+        <p>Use the horizontal scrollbar to see the other images.</p>
+
+        <div class="scroll-container">
+          
+            <div class="scroll-display-container vertical-container">
+               
+                <div>
+                     <p>
+                        Column 1
+                    </p>
+                </div>
+                <div >
+                    <p>
+                        Column 2
+                    </p>
+                </div>
+                <div >
+                    <p>
+                        Column 3
+                    </p>
+                    <img src="/Assets/Pictures/Ascent/Ascent1_Full.png" style="height: 90px;">
+                </div>
+                <div >
+                    <p>
+                        Column 4
+                    </p>
+                </div>
+               
+            </div>
+            <div class="scroll-display-container horizontal-container">
+                 <div>
+                    <p>
+                        Row 1
+                    </p>
+               </div>
+                <div >
+                    <p>
+                        Row 2
+                    </p>
+               </div>
+                <div>
+                    <p>
+                        Row 3
+                        
+                    </p>
+                    <img src="/Assets/Pictures/Ascent/Ascent1_Full.png" style="width:  250px;">
+               </div>
+                <div >
+                    <p>
+                        Row 4
+                    </p>
+               </div>
+            </div>
+            
+        </div>
+        
+        <br>
+       
+        <div class="scroll-container">
+            <img src="img_5terre.jpg" width="600" height="400">
+            <img src="img_forest.jpg" width="600" height="400">
+            <img src="img_lights.jpg" width="600" height="400">
+            <img src="img_mountains.jpg" width="600" height="400">
+        </div>
+
+        <p>Note that the images are of same size.</p>
+
+    </body>
+</html>
