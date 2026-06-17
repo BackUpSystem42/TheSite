@@ -1,7 +1,23 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <title> Arcoiris Monocromatico</title>
+        <link rel = "icon" type = "image/x-icon" href = "/Assets/Pictures/Ico/CompanyLogo.ico">
+ 
+        <link rel = "stylesheet" href = "/Assets/CSS/IndexPage.css">
 
+        <link rel = "alternate" hreflang="en" href="https://arcoirismonocromatico.com/en/">
+        <!-- <link rel = "alternate" hreflang="es" href="https://arcoirismonocromatico.com/es/"> -->
+        <link rel = "alternate" hreflang="x-default" href="https://arcoirismonocromatico.com/en/">
+
+        
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!--SEO Tag-->
+        <meta name = "title" content="Arcoiris Monocromatico">
+        <meta name="author" content="Jage">
+        <meta name="description" content="Home Page">
+        <meta name="language" content="English">
     </head>
     <body>
 
@@ -9,16 +25,16 @@
 
     <script>
         const pageLang = document.documentElement.lang || "en";
-        console.log("Page default language:", pageLang);
+        // console.log("Page default language:", pageLang);
 
         const browserLang = navigator.language || navigator.userLanguage;
-        console.log("navigator language:", pageLang);
-        console.log("navigator user language:", pageLang);
-//  const browserLang = navigator.language.slice(0, 2).toLowerCase();
-       if(typeof browserLang == "string")
-       {
-            GetSite(browserLang.slice(0,2).toLowerCase());
-       }
+        // console.log("navigator language:", pageLang);
+        // console.log("navigator user language:", pageLang);
+        //  const browserLang = navigator.language.slice(0, 2).toLowerCase();
+        if(typeof browserLang == "string")
+        {
+                GetSite(browserLang.slice(0,2).toLowerCase());
+        }
 
         function GetSite(lang)
         {
@@ -28,23 +44,11 @@
                 case "en":
                     window.location.href = "https://arcoirismonocromatico.com/en/";
                     break;
-                case "es":
-                    window.location.href = "https://arcoirismonocromatico.com/es/";
-                    break;
+                // case "es":
+                //     window.location.href = "https://arcoirismonocromatico.com/es/";
+                //     break;
             }
         }
-        // if(browserLang.includes("en"))
-        // {
-        //     window.location.href = "https://arcoirismonocromatico.com/en/";
-        // }
-        // else if(browserLang.includes("es"))
-        // {
-        //     window.location.href = "https://arcoirismonocromatico.com/es/";
-        // }
-        // else
-        // {
-        //     window.location.href = "https://arcoirismonocromatico.com/en/";
-        // }
-        
+       
     </script>
 </html>
