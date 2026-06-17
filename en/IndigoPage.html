@@ -9,7 +9,7 @@
 		<link rel = "stylesheet" href = "/Assets/CSS/GeneralFormat.css">
 
     <link rel = "alternate" hreflang="en" href="https://arcoirismonocromatico.com/en/IndigoPage">
-    <link rel = "alternate" hreflang="es" href="https://arcoirismonocromatico.com/es/IndigoPage">
+    <!-- <link rel = "alternate" hreflang="es" href="https://arcoirismonocromatico.com/es/IndigoPage"> -->
     <link rel = "alternate" hreflang="x-default" href="https://arcoirismonocromatico.com/en/IndigoPage">
 
     <meta charset="UTF-8">
@@ -39,13 +39,16 @@
       }
       #pageBody
       {
-        background-image: linear-gradient(to top, black, var(--prime-color), black);
+        background-image: 
+            url(/Assets/Pictures/ReapetPattern/PatternMaking_SingleTile_Black.png), /* Top layer */
+           
+           linear-gradient(to top, black, var(--prime-color), black); /*Bottom*/
       }    
     </style>
 	</head>
 
 	<body id = "pageBody">
-  <div id = "background-image" >
+  
 
     <div class ="banner" >
 
@@ -58,14 +61,14 @@
       <div class = "background-blur" style="top: 60px; width: 15px; height: 35px;"></div>
       
       <div class = "name">
-        <img src="/Assets/Pictures/Logo/V3 Logo_V5_Boho Rainbow Text-Center.png" style="height: 80px;">
+        <img src="/Assets/Pictures/Logo/V3 Logo_V5_Boho Rainbow Text-Center.png" style="height: 80px;" alt = "Logo Text">
       </div>
       <div class="banner">
-        <img src = "/Assets/Pictures/Ascent/Ascent1_White.png" class = "side-detail" style="transform: scaleX(-1);">
+        <img src = "/Assets/Pictures/Ascent/Ascent1_White.png" class = "side-detail" style="transform: scaleX(-1);" alt = "Ascent">
             
-        <img src="/Assets/Pictures/Logo/V2 Logo_V7.png" class = "logo">
+        <img src="/Assets/Pictures/Logo/V2 Logo_V7.png" class = "logo" alt = "Logo">
             
-        <img src = "/Assets/Pictures/Ascent/Ascent1_White.png" class = "side-detail">
+        <img src = "/Assets/Pictures/Ascent/Ascent1_White.png" class = "side-detail" alt = "Ascent">
       </div>   
     </div>
 
@@ -93,18 +96,16 @@
         </p>
       </div>
     </div>
-    <div class="small-empty-container" style="height: 200px;">
-
-    </div>
+   
     
     
     
-  </div> 
+  
 	</body>
 
   <script src = "/Assets/JavaScript/FetchElements.js">
   </script>
-  <script src = "/Assets/JavaScript/ChangeLanguage.js">
-  </script>
+  <!-- <script src = "/Assets/JavaScript/ChangeLanguage.js">
+  </script> -->
 
 </html>

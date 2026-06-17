@@ -10,7 +10,7 @@
 		<link rel = "stylesheet" href = "/Assets/CSS/GamePageFormat.css">
 
 		<link rel = "alternate" hreflang="en" href="https://arcoirismonocromatico.com/en/Game">
-    	<link rel = "alternate" hreflang="es" href="https://arcoirismonocromatico.com/es/Game">
+    	<!-- <link rel = "alternate" hreflang="es" href="https://arcoirismonocromatico.com/es/Game"> -->
     	<link rel = "alternate" hreflang="x-default" href="https://arcoirismonocromatico.com/en/Game">
 
 		<meta charset="UTF-8">
@@ -41,14 +41,17 @@
 			}
 			#pageBody
 			{
-				background-image: linear-gradient(to top, black, var(--prime-color), black);
+				background-image: 
+				url(/Assets/Pictures/ReapetPattern/PatternMaking_SingleTile_Black.png), /* Top layer */
+				
+				linear-gradient(to top, black, var(--prime-color), black); /*Bottom*/
 			}
 		
 		</style>
 	</head>
 
 	<body id = "pageBody">
-	<div id = "background-image" >
+	
 		
 		<div class ="banner" >
 			<!--Name blur-->
@@ -61,14 +64,14 @@
 
 
 			<div class = "name">
-				<img src="/Assets/Pictures/Logo/V3 Logo_V5_Boho Rainbow Text-Center.png" style="height: 80px;">
+				<img src="/Assets/Pictures/Logo/V3 Logo_V5_Boho Rainbow Text-Center.png" style="height: 80px;" alt = "Logo Text">
 			</div>
 			<div class="banner">
-				<img src = "/Assets/Pictures/Ascent/Ascent5_Green.png" class = "side-detail" style="transform: scaleX(-1);">
+				<img src = "/Assets/Pictures/Ascent/Ascent5_Green.png" class = "side-detail" style="transform: scaleX(-1);" alt = "Ascent">
 			
-				<img src="/Assets/Pictures/Logo/V2 Logo_V7.png" class = "logo">
+				<img src="/Assets/Pictures/Logo/V2 Logo_V7.png" class = "logo" alt = "Logo">
 			
-				<img src = "/Assets/Pictures/Ascent/Ascent5_Green.png" class = 	"side-detail">
+				<img src = "/Assets/Pictures/Ascent/Ascent5_Green.png" class = 	"side-detail" alt = "Ascent">
 			</div>   
 		</div>
 
@@ -134,19 +137,19 @@
 				<!--Image and description-->
 				<div class="architect-display-container">
 					<div class="architect-display">
-						<img src="/Assets/Pictures/Type/Type1.png">
+						<img src="/Assets/Pictures/Type/Type1.png" alt = "Type 1">
 						<p>
 						A robot felled with sadness 
 						</p>
 					</div>
 					<div class="architect-display">
-						<img src="/Assets/Pictures/Type/Type2.png">
+						<img src="/Assets/Pictures/Type/Type2.png" alt = "Type 2">
 						<p>
 						A person wangling a carnival of goofs 
 						</p>
 					</div>
 					<div class="architect-display">
-						<img src="/Assets/Pictures/Type/Type3.png">
+						<img src="/Assets/Pictures/Type/Type3.png" alt = "Type 3">
 						<p>
 						A person with a mask that knows a little too much
 						</p>
@@ -158,6 +161,7 @@
 			</div>
 		</div>
 
+		<!--Released Title-->
 		<div class="page-container">
 			<div class="large-container">
 				<h3 style="text-align: center;">Released Titles</h3>
@@ -167,22 +171,22 @@
 		<div class = "game-grid">
 			
 			<!--Another Day-->
-			<a href = "AnotherDay/" class = "game-background" style="background-color: rgb(136, 136, 136);">
+			<a href = "AnotherDay/" class = "game-background" style="background-color:  rgb(90, 136, 180)">
 				
+				<img src="/Assets-AD/Pictures/LibraryLogo-AnotherDay.png"
+				class="game-logo" alt = "AnotherDay-Logo"
+				>
 
-				<div class="game-banner" style="background-color:rgba(0,255,0,.5); width: 270px; height: 50px; top: -20px; left:-10px">
-				</div>
-				<h3 class = "game-name" style="top: -55px">
-					Another Day
-				</h3>
 				
-				<img src = "/Assets/Pictures/Old/Figure1.png" class = "game-foreground"
-				style=" image-rendering: pixelated; height: 300px; "
+				
+				<img src = "/Assets-AD/Pictures/2025_11_07 BigBrother RemodelingAndSizing Pose2.png" class = "game-foreground"
+				alt = "Another Day"
 				>
 				
 			</a>
 		</div>
 
+		<!--Pending Title-->
 		<div class="page-container">
 			<div class="large-container">
 				<h3 style="text-align: center;">Pending Titles</h3>
@@ -191,8 +195,21 @@
 
 		<div class = "game-grid">
 			
-			<!--0-->
+			<!-- 0
 			<a href = "404.html" class = "game-background">
+
+				<div class="game-banner">
+				</div>
+				<h3 class = "game-name">
+					#
+				</h3>
+				
+				<img class = "game-foreground" style="border: solid; width: 350px;">
+				style=" height: 350px; bottom: 63px; left: -80px;">
+				
+			</a> -->
+			<!--0-->
+			<a href = "Teaser/" class = "game-background">
 
 				<div class="game-banner">
 				</div>
@@ -200,13 +217,11 @@
 					0
 				</h3>
 				
-				<img src = "/Assets/Pictures/Teaser/Teaser0.png" class = "game-foreground"
-				style=" height: 350px; bottom: 63px; left: -80px;">
-				
+				<img src = "/Assets/Pictures/Teaser/Teaser0-350x340.png" class = "game-foreground" alt = "Teaser 0">				
 			</a>
 			
 			<!--1-->
-			<a href = "404.html" class = "game-background">
+			<a href = "Teaser/" class = "game-background">
 
 				<div class="game-banner">
 				</div>
@@ -214,13 +229,11 @@
 					1
 				</h3>
 				
-				<img src = "/Assets/Pictures/Teaser/Teaser1.png" class = "game-foreground"
-				style=" height: 300px; bottom: -15px; left: -60px;">
-				
+				<img src = "/Assets/Pictures/Teaser/Teaser1-350x340.png" class = "game-foreground" alt = "Teaser 1">
 			</a>
 
 			<!--2-->
-			<a href = "404.html" class = "game-background">
+			<a href = "Teaser/" class = "game-background">
 
 				<div class="game-banner">
 				</div>
@@ -228,13 +241,11 @@
 					2
 				</h3>
 				
-				<img src = "/Assets/Pictures/Teaser/Teaser2.png" class = "game-foreground"
-				style="  height: 200px; bottom: -92px;">
-				
+				<img src = "/Assets/Pictures/Teaser/Teaser2-350x340.png" class = "game-foreground" alt = "Teaser 2">
 			</a>
 			
 			<!--3-->
-			<a href = "404.html" class = "game-background">
+			<a href = "Teaser/" class = "game-background">
 
 				<div class="game-banner">
 				</div>
@@ -242,13 +253,11 @@
 					3
 				</h3>
 				
-				<img src = "/Assets/Pictures/Teaser/Teaser3.png" class = "game-foreground"
-				style=" height: 350px; bottom: 60px; left: -85px; ">
-				
+				<img src = "/Assets/Pictures/Teaser/Teaser3-350x340.png" class = "game-foreground" alt = "Teaser 3">
 			</a>
 
 			<!--4-->
-			<a href = "404.html" class = "game-background">
+			<a href = "Teaser/" class = "game-background">
 
 				<div class="game-banner">
 				</div>
@@ -256,13 +265,11 @@
 					4
 				</h3>
 				
-				<img src = "/Assets/Pictures/Teaser/Teaser4.png" class = "game-foreground"
-				style=" height: 340px; bottom: 25px; left: -25px;">
-				
+				<img src = "/Assets/Pictures/Teaser/Teaser4-350x340.png" class = "game-foreground" alt = "Teaser 4">
 			</a>
 
 			<!--5-->
-			<a href = "404.html" class = "game-background">
+			<a href = "Teaser/" class = "game-background">
 
 				<div class="game-banner">
 				</div>
@@ -270,13 +277,12 @@
 					5
 				</h3>
 				
-				<img src = "/Assets/Pictures/Teaser/Teaser5.png" class = "game-foreground"
-				style="height: 320px; bottom: 30px; left: -94px; ">
+				<img src = "/Assets/Pictures/Teaser/Teaser5-350x340.png" class = "game-foreground" alt = "Teaser 5">
 				
 			</a>
 
 			<!--6-->
-			<a href = "404.html" class = "game-background">
+			<a href = "Teaser/" class = "game-background">
 
 				<div class="game-banner">
 				</div>
@@ -284,13 +290,12 @@
 					6
 				</h3>
 				
-				<img src = "/Assets/Pictures/Teaser/Teaser6.png" class = "game-foreground"
-				style=" height: 300px; left: -90px; ">
-				
+				<img src = "/Assets/Pictures/Teaser/Teaser6-350x340.png" class = "game-foreground" alt = "Teaser 6">
+
 			</a>
 
 			<!--7-->
-			<a href = "404.html" class = "game-background">
+			<a href = "Teaser/" class = "game-background">
 
 				<div class="game-banner">
 				</div>
@@ -298,13 +303,12 @@
 					7
 				</h3>
 				
-				<img src = "/Assets/Pictures/Teaser/Teaser7.png" class = "game-foreground"
-				style=" height: 340px; bottom: 40px; left: -98px; ">
-				
+				<img src = "/Assets/Pictures/Teaser/Teaser7-350x340.png" class = "game-foreground" alt = "Teaser 7">
+
 			</a>
 
 			<!--8-->
-			<a href = "404.html" class = "game-background">
+			<a href = "Teaser/" class = "game-background">
 
 				<div class="game-banner">
 				</div>
@@ -312,13 +316,12 @@
 					8
 				</h3>
 				
-				<img src = "/Assets/Pictures/Teaser/Teaser8.png" class = "game-foreground"
-				style="height: 320px; bottom: 32px;">
-				
+				<img src = "/Assets/Pictures/Teaser/Teaser8-350x340.png" class = "game-foreground" alt = "Teaser 8">
+
 			</a>
 
 			<!--9-->
-			<a href = "404.html" class = "game-background">
+			<a href = "Teaser/" class = "game-background">
 
 				<div class="game-banner">
 				</div>
@@ -326,13 +329,12 @@
 					9
 				</h3>
 				
-				<img src = "/Assets/Pictures/Teaser/Teaser9.png" class = "game-foreground"
-				style="height: 330px; bottom: 35px; left: -40px;">
-				
+				<img src = "/Assets/Pictures/Teaser/Teaser9-350x340.png" class = "game-foreground" alt = "Teaser 9">
+
 			</a>
 
 			<!--10-->
-			<a href = "404.html" class = "game-background">
+			<a href = "Teaser/" class = "game-background">
 
 				<div class="game-banner">
 				</div>
@@ -340,13 +342,12 @@
 					10
 				</h3>
 				
-				<img src = "/Assets/Pictures/Teaser/Teaser10.png" class = "game-foreground"
-				style="height: 340px; bottom: 40px; left: -60px;">
+				<img src = "/Assets/Pictures/Teaser/Teaser10-350x340.png" class = "game-foreground" alt = "Teaser 10">
 				
 			</a>
 
 			<!--11-->
-			<a href = "404.html" class = "game-background">
+			<a href = "Teaser/" class = "game-background">
 
 				<div class="game-banner">
 				</div>
@@ -354,13 +355,12 @@
 					11
 				</h3>
 				
-				<img src = "/Assets/Pictures/Teaser/Teaser11.png" class = "game-foreground"
-				style=" height: 320px; bottom: 30px; left: -40px;">
+				<img src = "/Assets/Pictures/Teaser/Teaser11-350x340.png" class = "game-foreground" alt = "Teaser 11">
 				
 			</a>
 
 			<!--12-->
-			<a href = "404.html" class = "game-background">
+			<a href = "Teaser/" class = "game-background">
 
 				<div class="game-banner">
 				</div>
@@ -368,13 +368,12 @@
 					12
 				</h3>
 				
-				<img src = "/Assets/Pictures/Teaser/Teaser12.png" class = "game-foreground"
-				style=" height: 330px; bottom: 32px;  left: -60px;">
+				<img src = "/Assets/Pictures/Teaser/Teaser12-350x340.png" class = "game-foreground" alt = "Teaser 12">
 				
 			</a>
 
 			<!--13-->
-			<a href = "404.html" class = "game-background">
+			<a href = "Teaser/" class = "game-background">
 
 				<div class="game-banner">
 				</div>
@@ -382,13 +381,12 @@
 					13
 				</h3>
 				
-				<img src = "/Assets/Pictures/Teaser/Teaser13.png" class = "game-foreground"
-				style="  height: 320px; bottom:25px; left: -50px; ">
+				<img src = "/Assets/Pictures/Teaser/Teaser13-350x340.png" class = "game-foreground" alt = "Teaser 13">
 				
 			</a>
 
 			<!--14-->
-			<a href = "404.html" class = "game-background">
+			<a href = "Teaser/" class = "game-background">
 
 				<div class="game-banner">
 				</div>
@@ -396,13 +394,12 @@
 					14
 				</h3>
 				
-				<img src = "/Assets/Pictures/Teaser/Teaser14.png" class = "game-foreground"
-				style=" height: 320px; bottom: 25px; left: -50px;">
+				<img src = "/Assets/Pictures/Teaser/Teaser14-350x340.png" class = "game-foreground" alt = "Teaser 14">
 				
 			</a>
 
 			<!--15-->
-			<a href = "404.html" class = "game-background">
+			<a href = "Teaser/" class = "game-background">
 
 				<div class="game-banner">
 				</div>
@@ -410,13 +407,12 @@
 					15
 				</h3>
 				
-				<img src = "/Assets/Pictures/Teaser/Teaser15.png" class = "game-foreground"
-				style=" height: 330px; bottom: 35px; left: -30px;">
+				<img src = "/Assets/Pictures/Teaser/Teaser15-350x340.png" class = "game-foreground" alt  = "Teaser 15">
 				
 			</a>
 
 			<!--16-->
-			<a href = "404.html" class = "game-background">
+			<a href = "Teaser/" class = "game-background">
 
 				<div class="game-banner">
 				</div>
@@ -424,12 +420,12 @@
 					16
 				</h3>
 				
-				<img src = "/Assets/Pictures/Teaser/Teaser16.png" class = "game-foreground"
-				style=" height: 320px; bottom: 60px; left: -45px ">
+				<img src = "/Assets/Pictures/Teaser/Teaser16-350x340.png" class = "game-foreground" alt = "Teaser 16">
 				
 			</a>
+
 			<!--17-->
-			<a href = "404.html" class = "game-background">
+			<a href = "Teaser/" class = "game-background">
 
 				<div class="game-banner">
 				</div>
@@ -437,20 +433,17 @@
 					17
 				</h3>
 				
-				<img src = "/Assets/Pictures/Teaser/Teaser17.png" class = "game-foreground"
-				style=" height: 320px; bottom: 25px; left: -15px">
+				<img src = "/Assets/Pictures/Teaser/Teaser17-350x340.png" class = "game-foreground" alt = "Teaser 17">
 				
 			</a>
 		
 		</div>
 
-		
-	</div>
 	</body>
 	<script src = "/Assets/JavaScript/FetchElements.js">
 	</script>
-	<script src = "/Assets/JavaScript/ChangeLanguage.js">
-	</script>
+	<!-- <script src = "/Assets/JavaScript/ChangeLanguage.js">
+	</script> -->
 </html>
 
 <!-- <a href = "404.html" class = "game-background" style="background-color: rgb(136, 136, 136);">

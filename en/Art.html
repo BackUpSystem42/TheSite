@@ -8,7 +8,7 @@
 		<link rel = "stylesheet" href = "/Assets/CSS/GeneralFormat.css">
 
 		<link rel = "alternate" hreflang="en" href="https://arcoirismonocromatico.com/en/Art">
-        <link rel = "alternate" hreflang="es" href="https://arcoirismonocromatico.com/es/Art">
+        <!-- <link rel = "alternate" hreflang="es" href="https://arcoirismonocromatico.com/es/Art"> -->
         <link rel = "alternate" hreflang="x-default" href="https://arcoirismonocromatico.com/en/Art">
 
 		<meta charset="UTF-8">
@@ -39,13 +39,16 @@
 			}
 			#pageBody
 			{
-				background-image: linear-gradient(to top, black, var(--prime-color), black);
+				background-image: 
+            		url(/Assets/Pictures/ReapetPattern/PatternMaking_SingleTile_Black.png), /* Top layer */
+           
+           			linear-gradient(to top, black, var(--prime-color), black); /*Bottom*/
 			}
 		</style>
 	</head>
 
 	<body id = "pageBody">
-	<div id = "background-image" >
+	
     <!--Copy From Here-->
 		
 		<div class ="banner" >
@@ -58,14 +61,14 @@
 			<div class = "background-blur" style="top: 60px; width: 15px; height: 35px;"></div>
 
 			<div class = "name">
-				<img src="/Assets/Pictures/Logo/V3 Logo_V5_Boho Rainbow Text-Center.png" style="height: 80px;">
+				<img src="/Assets/Pictures/Logo/V3 Logo_V5_Boho Rainbow Text-Center.png" style="height: 80px;" alt = "Logo Text">
 			</div>
 			<div class="banner">
-				<img src = "/Assets/Pictures/Ascent/Ascent4_Yellow.png" class = "side-detail" style="transform: scaleX(-1);">
+				<img src = "/Assets/Pictures/Ascent/Ascent4_Yellow.png" class = "side-detail" style="transform: scaleX(-1);" alt = "Ascent">
             
-        		<img src="/Assets/Pictures/Logo/V2 Logo_V7.png" class = "logo">
+        		<img src="/Assets/Pictures/Logo/V2 Logo_V7.png" class = "logo" alt  = "Logo">
             
-        		<img src = "/Assets/Pictures/Ascent/Ascent4_Yellow.png" class = "side-detail">
+        		<img src = "/Assets/Pictures/Ascent/Ascent4_Yellow.png" class = "side-detail" alt = "Ascent">
 			</div>   
 		</div>
 
@@ -93,8 +96,9 @@
 		<div class="page-container">
 			<div class = "small-empty-space"></div>
 			<div class="large-container"> 
+				<h3>Inkscape</h3>
       			<p>
-					Inkscape: The vector base system is more understandable for me. Other graphic systems have a Raster approach, like Fire Alpha and Adobe Photoshop. That way of thinking is hard to wrap my head around it. With a hundred brush strokes, I can make this effect. The drawing tablet is also hard for me to get used to. I know that vector graphics have limitations compared to raster graphics. It is easier for me to make art.
+					The vector base system is more understandable for me. Other graphic systems have a Raster approach, like Fire Alpha and Adobe Photoshop. That way of thinking is hard to wrap my head around it. With a hundred brush strokes, I can make this effect. The drawing tablet is also hard for me to get used to. I know that vector graphics have limitations compared to raster graphics. It is easier for me to make art.
       			</p>
     		</div>
 		</div>
@@ -102,8 +106,9 @@
 		<div class="page-container">
 			
 			<div class="large-container"> 
+				<h3>Block Bench</h3>
       			<p>
-					Block Bench: I try to learn Blender times and times again. But it has too many features, windows, dropdown options, and procedures to archive the most basic of tasks. Too many “must have plug-ins”, additional needed software for the UV texture, and too many tools to learn. Plus, I do not have the skill or patient to master modeling highly detail characters. Block Bench is simply enough to work with and understand. I rather have constant low-ploy characters over inconstant high vertices character. With a lower vertices count, the game will run faster and better on low-end computers (more people can play it). I personally find more charm with low-poly, cel shaders, pixel games than others with a more “realistic” design.
+					I try to learn Blender times and times again. But it has too many features, windows, dropdown options, and procedures to archive the most basic of tasks. Too many “must have plug-ins”, additional needed software for the UV texture, and too many tools to learn. Plus, I do not have the skill or patient to master modeling highly detail characters. Block Bench is simply enough to work with and understand. I rather have constant low-ploy characters over inconstant high vertices character. With a lower vertices count, the game will run faster and better on low-end computers (more people can play it). I personally find more charm with low-poly, cel shaders, pixel games than others with a more “realistic” design.
       			</p>
     		</div>
 			<div class = "small-empty-space"></div>
@@ -111,20 +116,20 @@
 		<div class="page-container">
 			<div class = "small-empty-space"></div>
 			<div class = "large-container">
+				<h3>
+					Unity
+				</h3>
 				<p>
-					Unity: I make use it since its programming language (C#) is similar all the other languages that I know. It is easier and faster for me to use it than the alternative like Unreal Engine and Game Maker Studio. I am familiar with node base coding, but I am not welling to master it. So Unreal is out. Clickteam Fusion and Game Maker is too limiting for the type of project that I want to make. 
+					I make use it since its programming language (C#) is similar all the other languages that I know. It is easier and faster for me to use it than the alternative like Unreal Engine and Game Maker Studio. I am familiar with node base coding, but I am not welling to master it. So Unreal is out. Clickteam Fusion and Game Maker is too limiting for the type of project that I want to make. 
 				</p>
 			</div>
 		</div>
 
-		
-    
-	</div>
 	</body>
 
 	<script src = "/Assets/JavaScript/FetchElements.js">
 	</script>
-	<script src = "/Assets/JavaScript/ChangeLanguage.js">
-	</script>
+	<!-- <script src = "/Assets/JavaScript/ChangeLanguage.js">
+	</script> -->
 
 </html>
