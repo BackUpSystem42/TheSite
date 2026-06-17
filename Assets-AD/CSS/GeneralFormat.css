@@ -1,0 +1,163 @@
+
+@font-face {
+    font-family: pixal-operator;
+    src: url(/Assets-AD/Fonts/pixel_operator/PixelOperator.ttf);
+}
+
+:root
+{
+    --prime-color: rgb(90, 136, 180);
+    --gray-dark-color: rgb(144, 144, 144);
+    --gray-light-color: rgb(214, 214, 214);
+}
+
+div
+{
+    /* display: block; */
+    /* margin: 10px; */
+    color: var(--gray-dark-color);
+    font-family: pixal-operator;
+    /* border: solid; */
+}
+
+a
+{
+    display: block;
+    border: solid;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 10px;
+
+    cursor: pointer;
+}
+
+a:hover
+{
+    color: white;
+    background-color: var(--gray-dark-color);
+    border-color: var(--gray-light-color);
+}
+
+a:link, a:visited
+{
+	text-decoration: none;	
+}
+
+body
+{
+    margin: 0px;
+    background-color: var(--prime-color);
+}
+
+#languageSelector
+{
+    position: absolute;
+    right: 10px;
+    top: 10px;
+
+    width: 150px;
+    padding: 5px;
+    font-family: pixal-operator;
+
+    color: var(--gray-dark-color);
+    background-color: white;
+
+    border: soild;
+    border-color:  var(--gray-dark-color);
+    border-radius: 10px ;
+
+}
+
+#languageSelector:hover, #languageSelector:focus {
+   
+    outline: none;
+}
+
+#navBar
+{
+    display: flex;
+    background-color: white;
+    border: solid;
+    border-width: 5px;
+
+}
+
+#bannerDisplay
+{
+    background-color: var(--gray-dark-color);
+    border: none;
+	position: sticky;
+	top: 0px;
+	z-index: 10;
+    margin-bottom: 20px;
+}
+
+.app-title
+{
+    color: white;
+    font-size: 20px;
+    padding: 10px ;
+    margin: 0px;
+}
+
+.email-container
+{
+    background-color: white;
+    border: solid;
+    border-color: var(--gray-light-color) ;
+    /* padding: 0px 10px 10px 10px; */
+    margin: 15px;
+}
+
+.email-container > h2
+{
+    border-bottom: solid;
+    border-color: var(--gray-light-color);
+    margin: 0px;
+    padding: 20px 10px 20px 10px;
+   font-weight: lighter;
+}
+
+.email-tread
+{
+    display: flex;
+    /* display: block; */
+    flex-direction: row;
+
+    margin: 20px;
+}
+
+.email-content
+{
+    display: block;
+    width: 100%;
+    /* background-color: aqua; */
+}
+
+.email-bar
+{
+    background-color: var(--gray-light-color);
+    border: solid;
+    margin-right: 20px;
+    width: 6px;
+}
+
+.email-info
+{
+    /* flex: 1; */
+    display: flex;
+    justify-content: space-between;
+    /* width: 100%; */
+}
+
+.steam-widget
+{
+    display: block;
+    border: none;
+    /* width: 450px; */
+    width: 90%;
+    height: 200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
