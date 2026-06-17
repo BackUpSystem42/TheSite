@@ -145,8 +145,8 @@ ctx.fill();
 
 //------------------------------------------------------
 //empty space shape
-canvas = document.getElementById("emptySpace");
-ctx = canvas.getContext("2d");
+// canvas = document.getElementById("emptySpace");
+// ctx = canvas.getContext("2d");
 
 //end of the hall
 /*
@@ -157,44 +157,44 @@ b                   |
 |                   |
 ---------------------
 */
-a = element.offsetWidth;
-console.log(window.innerHeight,pageHeight);
-b = window.innerHeight -pageHeight -15;
-console.log(b);
-if(b < 0)
-{
-  b = 0;
-}
+// a = element.offsetWidth;
+// console.log(window.innerHeight,pageHeight);
+// b = window.innerHeight -pageHeight -15;
+// console.log(b);
+// if(b < 0)
+// {
+//   b = 0;
+// }
 
-canvas.width = element.offsetWidth;
-canvas.height = b;
+// canvas.width = element.offsetWidth;
+// canvas.height = b;
 // Define a new path:
-ctx.beginPath();
+// ctx.beginPath();
 
 // Define a start point
-ctx.moveTo(0, 0);
+// ctx.moveTo(0, 0);
 
 // Define points
-ctx.lineTo(0, b);
-ctx.lineTo(a, b);
-ctx.lineTo(a, 0);
+// ctx.lineTo(0, b);
+// ctx.lineTo(a, b);
+// ctx.lineTo(a, 0);
 
 
 
 // ctx.strokeStyle = "rgb(0 0 0 / 0%)";
-ctx.lineWidth = 0;
+// ctx.lineWidth = 0;
 // Draw it
-ctx.stroke();
+// ctx.stroke();
 
 //Color shape
 
-ctx.fillStyle = "darkgray";
-ctx.fill();
+// ctx.fillStyle = "darkgray";
+// ctx.fill();
 
 //------------------------------------------------------
 //relocate scene
-const scene = document.getElementById("scene");
-scene.style.bottom = b +"px";
+// const scene = document.getElementById("scene");
+// scene.style.bottom = pageHeight +"px";
 //------------------------------------------------------
 //when resize the window it will redraw the shapes
 window.addEventListener

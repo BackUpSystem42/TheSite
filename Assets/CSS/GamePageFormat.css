@@ -3,8 +3,10 @@
 .game-grid
 {
     display: grid;
+
     grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
-    grid-gap: 50px;
+    grid-gap: 50px 10px;
+   
     align-items: center;
     /* justify-content: space-between; */
     justify-content: center;
@@ -34,9 +36,17 @@
     left:-10px
 }
 
+img.game-logo
+{
+    height: 100px;
+    position: absolute;
+    top: -25px; 
+    transform: translate(-50%,0%);
+    
+}
 /* img cover size 510px x 718px */
 
-.game-background
+a.game-background
 {
     background-color: rgb(63, 63, 63);
     width: 250px;
@@ -44,7 +54,8 @@
 
    
     position: relative;
-    display: inline-block;
+    /* display: inline-block; */
+
     align-items: center;
 
     margin-left: auto;
@@ -53,24 +64,26 @@
     border: solid;
     border-color: black;
     
-    /* background-image: url(/Assets/Pictures/ReapetPattern/PatternMaking_SingleTile.png); */
-    background-repeat: no-repeat;
+    /* background-image: radial-gradient( rgb(121, 195, 20) 15%,rgba(255,255,255,.2) 50%);
+    background-size: cover;
+    background-repeat: no-repeat; */
 }
+
 .game-foreground
 {
-    /* width: 240px; */
-    /* transform: translate(-50%,0%); */
-    position: relative;
-    
-    
+    height: 340px;
+    /* width: 350px; */
+    transform: translate(-50%,0%);
+
+    position: absolute;
+
+    bottom: -20px;
 }
 
 .architect-display-container
 {
     display: flex;
-    /* min-height: 200px; */
     
-   
 }
 .architect-display
 {
@@ -98,17 +111,21 @@
 
 @media only screen and (max-width: 750px)
 {
+    .architect-display
+    {
+                 
+        border: solid;
+        border-radius: 10px;
+        border-color: white;
+    }
     .architect-display > img    
     {
         display: none;
     }
-    .architect-display > p
-    {
-        border: solid;
-        border-radius: 10px;
-    }
+  
     .architect-display-container
     {
         min-height: auto;
     }
-}
+
+} 

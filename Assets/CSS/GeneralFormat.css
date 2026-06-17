@@ -8,6 +8,11 @@ p
 	padding: 8px 8px 5px 5px;
 }
 
+img
+{
+	color: white;
+}
+
 li
 {
 	color: white;
@@ -19,6 +24,7 @@ li
 
 h3
 {
+	padding: 0 0 0 10px;
 	color: white;
 }
 
@@ -40,15 +46,38 @@ body
 {
 	background-color: black;
 	margin: 0;
-	overflow-x: hidden; /* Disable horizontal scroll */
-}
+	/*Disable horizontal scroll */
+ 	/* overflow-x: hidden; */
+ 	width: 100%;
 
+	background-image: 
+            url(/Assets/Pictures/ReapetPattern/PatternMaking_SingleTile_Black.png), /* Top layer */
+           
+           linear-gradient(to top, black, var(--prime-color), black);
+
+   
+       
+	background-size: 
+           
+            350px 350px, 
+            200%;       
+
+	background-repeat: 
+            repeat, 
+            no-repeat; 
+
+	background-attachment: fixed;
+
+}
+	
+	  
+/* 
 div
 {
-	/* margin: 10px 8px 10px 8px; */
+	margin: 10px 8px 10px 8px;
 	margin-top: 10px;
 	margin-bottom: 10px;
-} 
+}  */
 
 a:link, a:visited
 {
@@ -71,11 +100,13 @@ footer
 	display: flex;
 	flex-direction: row;
 	justify-content: center;
+	gap: 5px;
 	/* align-items: space-between; */
 	/* margin-left: 10px; */
 	/* margin-right: 10px; */
-	margin-left: auto;
-	margin-right: auto;
+	margin: 25px auto 25px auto;
+	/* margin-left: auto;
+	margin-right: auto; */
 	
 }
 
@@ -108,35 +139,15 @@ footer
 	padding: 5px 0px 5px 2px;
 }
 
-#logo
+img.center
 {
-	width: 250px;
-	object-fit: cover;
-	image-rendering: pixelated;
-	transition: opacity 2s;
-	
+	width: 400px;
 	display: block;
-	margin-left: auto;
-	margin-right: auto;
 	
-	z-index: 1;	
+	margin: auto;
+	background-image: radial-gradient(rgba(255,225,225, .5) 10% , rgba(0,0,0,0) 70%);
 }
-
-#front-logo,#back-logo
-{
-	width: 250px;
-	object-fit: cover;
-	image-rendering: pixelated;
-	opacity: 0;
-	transition: opacity 2s;
-
-	z-index: 2;
-	position: absolute;
-	top: 204;
-	left:50%;
-
-	transform: translate(-50%, -50%);	
-}
+ 
 
 .small-container
 {
@@ -170,6 +181,11 @@ footer
 	flex: 2;
 }
 
+.quote
+{
+	margin: 0px 20% 0px 20%; 
+	text-align:justify;
+}
 .clickable
 {
 	padding: 5px 5px 5px 5px;
@@ -229,6 +245,8 @@ footer
 	background-size: 350px;
 
 	margin: -10px 0px;
+
+	/* height: 500px; */
 	
 	/* padding: -10px; */
 }
@@ -269,4 +287,28 @@ footer
 		margin-left: 10px;
 		margin-right: 10px;
 	}
+
+	.large-empty-space, .small-empty-space
+	{
+		display: none;
+	}
+
+	.page-container
+    {
+        flex-direction:column;
+    }
+}
+
+@media  screen and (max-width: 450px) 
+{
+	.side-detail
+	{
+		height: 75px;
+	}
+
+	img.center
+	{
+		width: 300px;
+	}
+	
 }
