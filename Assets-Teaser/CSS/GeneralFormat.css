@@ -1,0 +1,39 @@
+
+/* @font-face {
+    font-family: pixal-operator;
+    src: url(/BoilerPlateAssets/Fonts/pixel_operator/PixelOperator.ttf);
+} */
+
+
+a
+{
+    display: block;
+    border: solid;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+body
+{
+ 
+     background-image: linear-gradient(to top, black, white, black);
+    /*background-size: cover;
+    background-repeat: no-repeat; */
+}
+
+#languageSelector
+{
+    position: absolute;
+    right: 10px;
+    top: 10px;
+}
+
+#bannerDisplay
+{
+    border: none;
+	position: sticky;
+	top: 0px;
+	z-index: 10;
+}
+

@@ -1,0 +1,43 @@
+.optionButton
+{
+    flex:1;
+    /* background-color: rgb(246, 7, 162);   */
+    color: white;
+    text-align: center;   
+    text-shadow: 2px 2px 5px black;
+    /* border: 2px solid black; */
+    border-radius: 5px;
+      
+	padding-top: 5px;
+	padding-bottom: 5px;
+	padding-left: 15px;
+	padding-right: 15px;
+
+	margin-left: 5px;
+	margin-right: 5px;
+	transition: background-color 1.5s, color 1s;
+
+   
+	cursor: pointer;
+}
+
+.optionButton:hover
+{
+    transition: background-color .5s;
+    /* text-decoration: underline; */
+}
+
+#navBar
+{
+  
+    display: flex;
+	flex-direction: row;
+  
+    padding: 15px;
+    /* border: solid; */
+    position: sticky;
+    top:0px;
+    background-color: rgb(0, 0, 0, .75);
+    /* margin: 0px; */
+
+}
